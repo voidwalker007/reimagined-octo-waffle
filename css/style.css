@@ -1,0 +1,282 @@
+*{
+margin: 0;
+
+padding: 0;
+
+
+}
+
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+.top-navbar{
+    height: 60px;
+    top:0;
+    position: sticky;
+    background: #555555;
+    margin-bottom: 20px;
+    border-bottom: 3px solid orange;
+    z-index: 2;
+}
+.logo {
+    height: 45px;
+    margin: 5px 10px 5px 5px;
+}
+.form-control{
+    margin:10px 0px 5px 200px;
+
+    border: 1px solid orange;
+    box-shadow: none !important;
+    
+}
+.input-group-text{
+    background:orange;
+    margin:8.5px 10px 6px -42px;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+.searchbox{
+
+display: inline-flex;
+width: 65%;
+
+
+}
+.menu-item{
+   
+    width: 35%;
+    height: 55px;
+    float: right;
+    
+}
+.menu-item ul{
+    display: inline-flex;
+    float: right;
+    
+
+    
+
+}
+
+.menu-item ul li{
+   
+    list-style-type: none;
+    margin: 4px 2px 3px 2px ;
+    text-align: center;
+    padding: 15px 15px;
+    background-color: none;
+    cursor: pointer;
+}
+.menu-item ul li:hover{
+    margin: 4px 2px 3px 2px ;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    
+    list-style-type: none;
+    padding: 15px 15px;
+    text-align: center;
+    background-color: none;
+    cursor: pointer;
+}
+.menu-item ul li a{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+
+}
+.fa-cart-plus{
+    margin-right: 5px;
+    
+}
+
+
+@media only screen and (max-width:980px)
+{
+    .top-navbar{
+        height: 118px;
+        border-bottom: 0;
+
+    }
+    .searchbox{
+        width: 100%;
+
+    }
+    .menu-item{
+        width: 100%;
+
+    }
+    .menu-item ul {
+        margin: 10px 0;
+        width:  100%;
+
+    }
+    .menu-item ul li {
+        height: 57px;
+        width: 100%;
+    }
+}
+
+.sidemenu{
+    
+    width: 20%;
+    font-size: 16px;
+    float: left;
+    z-index: 20;
+    margin-top: 3px;
+    position: fixed;
+
+    background-color: #ffa;
+    display: none;
+
+}
+
+.sidemenu ul{
+    margin-left: 10px;
+
+}
+.sidemenu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top:10px;
+    cursor: pointer;
+
+}
+
+.sidemenu li:hover{
+    background-color: grey;
+}
+
+.sidemenu ul li ul{
+    display: none;
+    z-index: 10;
+    top:55px;
+}
+.sidemenu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 18%;
+    padding:0 100px 10px 10px;
+    position: fixed;
+    background: #eeeeee;
+    box-shadow: 1px 1px 4px 1px;
+
+}
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+#menuicon{
+    font-size: 30px;
+    margin: 10px;
+    color:black;
+    border:2px solid white;
+    display: block;
+
+}
+#closeicon{
+    font-size: 30px;
+    margin: 10px;
+    color:black;
+    border:1px solid white;
+    display: none;
+
+}
+@media only screen and (max-width:980px)
+{
+    .sidemenu{
+        width: 34%;
+        z-index: 20;
+        margin-top: 63px;
+        position: fixed;
+        font-size: 12px;
+        display: none;
+
+    }
+
+    .sidemenu ul li ul{
+        margin-top: 64px;
+    }
+    .sidemenu ul li:hover ul {
+        margin-left: 32%;
+    }
+
+    #menuicon{
+        display: block;
+
+    }
+}
+
+
+
+/* -------slider--------*/
+.slider{
+
+    margin-left: 0%;
+    margin-top: 1px;
+  
+   
+
+}
+
+@media only screen and (max-width:980px){
+    .slider{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*-----featureditem_------*/
+.heading-text{
+
+    text-align: center;
+    margin-top: 10px;
+}
+.featured-item{
+    margin: 50px 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: inline;
+}
+
+.featured-item img{
+    width: 75%;
+    padding:20px 0;
+    
+    cursor: pointer;
+    
+   
+    
+}
+
+.featured-item img:hover{
+    transform: scale(1.1);}
+
+
+.heading-text{
+    font-weight: bold;
+    background-color: orange;
+
+  }
+
+.backtotop{
+    text-align: center;
+    padding: 15px 0px 15px 0px ;
+   margin-top:2px;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: orange;
+    height: 49px;
+}
+
+.footercontent{
+    background: #232f3e;
+
+}
